@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"S:\\PracticeUnreal\\ArenaBattle\\Source\\ArenaBattle\\ArenaBattle.Build.cs",
+		"S:\\PracticeUnreal\\ArenaBattle\\Source\\ArenaBattle.Target.cs",
+		"S:\\PracticeUnreal\\ArenaBattle\\Source\\ArenaBattleEditor.Target.cs"
+	],
+	"EngineVersion": "5.5.4"
+}
