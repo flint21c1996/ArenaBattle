@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ARENABATTLE_ABCharacterPlayer_generated_h
 
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAABCharacterPlayer(); \
 	friend struct Z_Construct_UClass_AABCharacterPlayer_Statics; \
@@ -23,9 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AABCharacterPlayer)
 
 
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AABCharacterPlayer(); \
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AABCharacterPlayer(AABCharacterPlayer&&); \
@@ -37,12 +35,12 @@ public: \
 	NO_API virtual ~AABCharacterPlayer();
 
 
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_12_PROLOG
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_15_GENERATED_BODY \
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_15_PROLOG
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_15_INCLASS_NO_PURE_DECLS \
-	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_15_ENHANCED_CONSTRUCTORS \
+	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_18_INCLASS_NO_PURE_DECLS \
+	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterPlayer_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

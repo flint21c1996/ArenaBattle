@@ -12,7 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeABCharacterBase() {}
 // Begin Cross Module References
 ARENABATTLE_API UClass* Z_Construct_UClass_AABCharacterBase();
 ARENABATTLE_API UClass* Z_Construct_UClass_AABCharacterBase_NoRegister();
-ENGINE_API UClass* Z_Construct_UClass_APawn();
+ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 UPackage* Z_Construct_UPackage__Script_ArenaBattle();
 // End Cross Module References
 
@@ -41,7 +41,7 @@ struct Z_Construct_UClass_AABCharacterBase_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 UObject* (*const Z_Construct_UClass_AABCharacterBase_Statics::DependentSingletons[])() = {
-	(UObject* (*)())Z_Construct_UClass_APawn,
+	(UObject* (*)())Z_Construct_UClass_ACharacter,
 	(UObject* (*)())Z_Construct_UPackage__Script_ArenaBattle,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AABCharacterBase_Statics::DependentSingletons) < 16);
@@ -80,10 +80,10 @@ AABCharacterBase::~AABCharacterBase() {}
 struct Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AABCharacterBase, AABCharacterBase::StaticClass, TEXT("AABCharacterBase"), &Z_Registration_Info_UClass_AABCharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AABCharacterBase), 1087775192U) },
+		{ Z_Construct_UClass_AABCharacterBase, AABCharacterBase::StaticClass, TEXT("AABCharacterBase"), &Z_Registration_Info_UClass_AABCharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AABCharacterBase), 3316052051U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_3405268043(TEXT("/Script/ArenaBattle"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_2998128167(TEXT("/Script/ArenaBattle"),
 	Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

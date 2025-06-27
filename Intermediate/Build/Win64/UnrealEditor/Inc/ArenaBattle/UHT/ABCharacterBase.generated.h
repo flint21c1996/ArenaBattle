@@ -19,7 +19,7 @@ private: \
 	static void StaticRegisterNativesAABCharacterBase(); \
 	friend struct Z_Construct_UClass_AABCharacterBase_Statics; \
 public: \
-	DECLARE_CLASS(AABCharacterBase, APawn, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/ArenaBattle"), NO_API) \
+	DECLARE_CLASS(AABCharacterBase, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/ArenaBattle"), NO_API) \
 	DECLARE_SERIALIZER(AABCharacterBase)
 
 
