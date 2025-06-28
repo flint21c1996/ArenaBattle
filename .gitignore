@@ -361,3 +361,27 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Unreal Engine 관련 파일 무시
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+*.VC.db
+*.uproject.log
+
+# 대용량 바이너리 무시
+*.pdb
+*.exe
+*.dll
+*.app
+*.dmg
+*.lib
+*.so
+*.a
+*.apk
+*.unitypackage
+*.zip
+*.rar
