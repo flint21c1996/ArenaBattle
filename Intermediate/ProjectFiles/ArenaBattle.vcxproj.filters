@@ -44,17 +44,14 @@
     <ClCompile Include="..\..\Source\ArenaBattle\ArenaBattle.h">
       <Filter>Source\ArenaBattle</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ArenaBattle\ArenaBattleCharacter.cpp">
-      <Filter>Source\ArenaBattle</Filter>
+    <Filter Include="Source\ArenaBattle\Animation">
+      <UniqueIdentifier>{D8787384-584F-35F1-8C8D-1F04BF3ADC89}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ArenaBattle\Animation\ABAnimInstance.cpp">
+      <Filter>Source\ArenaBattle\Animation</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ArenaBattle\ArenaBattleCharacter.h">
-      <Filter>Source\ArenaBattle</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ArenaBattle\ArenaBattleGameMode.cpp">
-      <Filter>Source\ArenaBattle</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ArenaBattle\ArenaBattleGameMode.h">
-      <Filter>Source\ArenaBattle</Filter>
+    <ClCompile Include="..\..\Source\ArenaBattle\Animation\ABAnimInstance.h">
+      <Filter>Source\ArenaBattle\Animation</Filter>
     </ClCompile>
     <Filter Include="Source\ArenaBattle\Character">
       <UniqueIdentifier>{F12A4E44-52A2-3676-A6C4-7E4B2637E7A7}</UniqueIdentifier>
@@ -63,6 +60,12 @@
       <Filter>Source\ArenaBattle\Character</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ArenaBattle\Character\ABCharacterBase.h">
+      <Filter>Source\ArenaBattle\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ArenaBattle\Character\ABCharacterControlData.cpp">
+      <Filter>Source\ArenaBattle\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ArenaBattle\Character\ABCharacterControlData.h">
       <Filter>Source\ArenaBattle\Character</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ArenaBattle\Character\ABCharacterPlayer.cpp">

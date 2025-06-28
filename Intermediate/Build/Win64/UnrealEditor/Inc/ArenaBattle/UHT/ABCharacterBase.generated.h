@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ARENABATTLE_ABCharacterBase_generated_h
 
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAABCharacterBase(); \
 	friend struct Z_Construct_UClass_AABCharacterBase_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AABCharacterBase)
 
 
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AABCharacterBase(AABCharacterBase&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~AABCharacterBase();
 
 
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_9_PROLOG
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_12_GENERATED_BODY \
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_16_PROLOG
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_12_INCLASS_NO_PURE_DECLS \
-	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_12_ENHANCED_CONSTRUCTORS \
+	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_19_INCLASS_NO_PURE_DECLS \
+	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -50,5 +50,13 @@ template<> ARENABATTLE_API UClass* StaticClass<class AABCharacterBase>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h
 
+
+#define FOREACH_ENUM_ECHARACTERCONTROLTYPE(op) \
+	op(ECharacterControlType::Shoulder) \
+	op(ECharacterControlType::Quater) 
+
+enum class ECharacterControlType : uint8;
+template<> struct TIsUEnumClass<ECharacterControlType> { enum { Value = true }; };
+template<> ARENABATTLE_API UEnum* StaticEnum<ECharacterControlType>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
