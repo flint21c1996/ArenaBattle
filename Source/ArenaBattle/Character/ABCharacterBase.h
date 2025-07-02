@@ -29,4 +29,31 @@ protected:
 	UPROPERTY(EditAnywhere, Category = CharacterControl, Meta = (AllowprivateAccess = "true"))
 	TMap<ECharacterControlType, class UABCharacterControlData*> CharacterControlManager;
 
+//콤보액션 섹션 / 애니메이션 몽타주를 활용한 
+protected:
+	//언리얼 에디터, 블루프린트에서 값이 세팅된다.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animaition)
+	TObjectPtr<class UAnimMontage>ComboActionMontage;
+
+	//데이터 에셋을 로딩해 가지고 있기 위한 변수
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<class UABComboActionData> ComboActionData;
+
+	void ProcessComboCommand();
+
+	void ComboActionBegin();
+
+	//콤보가 끝나는 함수의 경우 몽타주에 설정된 델리게이트를 통해 바로 호출될수 있도록 파라미터를 맞추겠음.
+	void ComboActionEnd(class UAnimMontage* TargetMontage, bool IsProperlyEnded);
+
+	//타이머를 발동시킬 함수
+	void SetComboCheckTimer();
+
+	//타이머가 발동됨ㄴ 입력이 들어왔는지 체크하는 함수
+	void ComboCheck();
+
+	//현재 콤보가 어디까지 실행되었는지?
+	int32 CurrentCombo = 0;	//0 : 콤보시작x  //1>= : 콤보중
+	FTimerHandle ComboTimerHandle;
+	bool HasNextComboCommand = false;	//내부에서만 쓸것이기네 bool씀.
 };
