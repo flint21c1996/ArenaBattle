@@ -7,7 +7,7 @@
 #include "ABCharacterControlData.h"
 #include "Animation/AnimMontage.h"
 #include "ABComboActionData.h"
-
+#include "Physics/ABCollision.h"
 // Sets default values
 AABCharacterBase::AABCharacterBase()
 {
@@ -161,3 +161,29 @@ void AABCharacterBase::ComboCheck()
 	}
 }
 
+void AABCharacterBase::AttackHitCheck()
+{
+	//트레이스 채널을 설정해서 물체가 서로 충돌하는지를 검사하는 로직
+
+	//트레이스 결과가 저장될 구조체, 무엇과 충돌했는지, 어디에 맞았는지 등의 정보가 들어있다.
+	FHitResult OurHitResult;
+
+	//충돌 검사에 사용될 파라미터를 설정
+	//SCENE_QUERY_STAT(Attack) - 성능 추적용 이름(트레이스 이름)
+	//false - 복잡한 콜리전 여부(true이면 복잡한 콜리전 사용, 여기선 단순 처리)
+	//this - 자기자신은 충돌 대상에서 제외
+	FCollisionQueryParams(SCENE_QUERY_STAT(Attack), false, this);
+
+	const float AttackRange = 40.0f;		//트레이스가 나아갈 자리
+	const float AttackRadius = 50.0f;		//Sweep 구의 반지름(지름 100cm 구)
+	const float AttackDamage = 30.0f;		//실제로 적용할 데미지
+
+	//공격 시작 위치 - 내 위치에서 앞쪽으로 캡슐 반지름 만큼 떨어진 지점 -> 자기자신이 공격을 맞지 않도록 앞에서 시작하게 함
+	const FVector Start = GetActorLocation() + GetActorForwardVector() * GetCapsuleComponent()->GetScaledCapsuleRadius();
+
+	//공격이 진행되는 방향의 끝점
+	const FVector End = Start + GetActorForwardVector() * AttackRange;
+
+	bool HitDetected = GetWorld()->SweepSingleByChannel(OurHitResult, Start, End, FQuat::Identity, CCHANNEL_ABACTION, FCollisionShape::MakeSphere(AttackRange), Params)
+
+}

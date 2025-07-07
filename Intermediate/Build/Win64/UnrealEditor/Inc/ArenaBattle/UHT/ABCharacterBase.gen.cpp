@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeABCharacterBase() {}
 // Begin Cross Module References
 ARENABATTLE_API UClass* Z_Construct_UClass_AABCharacterBase();
 ARENABATTLE_API UClass* Z_Construct_UClass_AABCharacterBase_NoRegister();
+ARENABATTLE_API UClass* Z_Construct_UClass_UABAnimationAttackInterface_NoRegister();
 ARENABATTLE_API UClass* Z_Construct_UClass_UABCharacterControlData_NoRegister();
 ARENABATTLE_API UClass* Z_Construct_UClass_UABComboActionData_NoRegister();
 ARENABATTLE_API UEnum* Z_Construct_UEnum_ArenaBattle_ECharacterControlType();
@@ -135,6 +136,7 @@ struct Z_Construct_UClass_AABCharacterBase_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ComboActionData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AABCharacterBase>::IsAbstract,
 	};
@@ -160,6 +162,9 @@ UObject* (*const Z_Construct_UClass_AABCharacterBase_Statics::DependentSingleton
 	(UObject* (*)())Z_Construct_UPackage__Script_ArenaBattle,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AABCharacterBase_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AABCharacterBase_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UABAnimationAttackInterface_NoRegister, (int32)VTABLE_OFFSET(AABCharacterBase, IABAnimationAttackInterface), false },  // 933931035
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_AABCharacterBase_Statics::ClassParams = {
 	&AABCharacterBase::StaticClass,
 	"Game",
@@ -167,11 +172,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AABCharacterBase_Static
 	DependentSingletons,
 	nullptr,
 	Z_Construct_UClass_AABCharacterBase_Statics::PropPointers,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_AABCharacterBase_Statics::PropPointers),
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AABCharacterBase_Statics::Class_MetaDataParams), Z_Construct_UClass_AABCharacterBase_Statics::Class_MetaDataParams)
 };
@@ -198,10 +203,10 @@ struct Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_C
 		{ ECharacterControlType_StaticEnum, TEXT("ECharacterControlType"), &Z_Registration_Info_UEnum_ECharacterControlType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2494479591U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AABCharacterBase, AABCharacterBase::StaticClass, TEXT("AABCharacterBase"), &Z_Registration_Info_UClass_AABCharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AABCharacterBase), 1072341921U) },
+		{ Z_Construct_UClass_AABCharacterBase, AABCharacterBase::StaticClass, TEXT("AABCharacterBase"), &Z_Registration_Info_UClass_AABCharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AABCharacterBase), 2210826871U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_427659075(TEXT("/Script/ArenaBattle"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_4166621490(TEXT("/Script/ArenaBattle"),
 	Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_Statics::EnumInfo));

@@ -53,6 +53,12 @@
     <ClCompile Include="..\..\Source\ArenaBattle\Animation\ABAnimInstance.h">
       <Filter>Source\ArenaBattle\Animation</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ArenaBattle\Animation\AnimNotify_AttackHitCheck.cpp">
+      <Filter>Source\ArenaBattle\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ArenaBattle\Animation\AnimNotify_AttackHitCheck.h">
+      <Filter>Source\ArenaBattle\Animation</Filter>
+    </ClCompile>
     <Filter Include="Source\ArenaBattle\Character">
       <UniqueIdentifier>{F12A4E44-52A2-3676-A6C4-7E4B2637E7A7}</UniqueIdentifier>
     </Filter>
@@ -88,6 +94,21 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\ArenaBattle\Game\ABGameMode.h">
       <Filter>Source\ArenaBattle\Game</Filter>
+    </ClCompile>
+    <Filter Include="Source\ArenaBattle\Interface">
+      <UniqueIdentifier>{90A4245C-9C79-3DD9-8729-EB5EBDB20089}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ArenaBattle\Interface\ABAnimationAttackInterface.cpp">
+      <Filter>Source\ArenaBattle\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ArenaBattle\Interface\ABAnimationAttackInterface.h">
+      <Filter>Source\ArenaBattle\Interface</Filter>
+    </ClCompile>
+    <Filter Include="Source\ArenaBattle\Physics">
+      <UniqueIdentifier>{F345D2F0-E7D7-3CF8-BE52-D6A246326902}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ArenaBattle\Physics\ABCollision.h">
+      <Filter>Source\ArenaBattle\Physics</Filter>
     </ClCompile>
     <Filter Include="Source\ArenaBattle\Player">
       <UniqueIdentifier>{8904986B-7200-3F65-968C-D810E678D1C5}</UniqueIdentifier>

@@ -14,16 +14,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ARENABATTLE_ABCharacterBase_generated_h
 
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_19_INCLASS_NO_PURE_DECLS \
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAABCharacterBase(); \
 	friend struct Z_Construct_UClass_AABCharacterBase_Statics; \
 public: \
 	DECLARE_CLASS(AABCharacterBase, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/ArenaBattle"), NO_API) \
-	DECLARE_SERIALIZER(AABCharacterBase)
+	DECLARE_SERIALIZER(AABCharacterBase) \
+	virtual UObject* _getUObject() const override { return const_cast<AABCharacterBase*>(this); }
 
 
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_19_ENHANCED_CONSTRUCTORS \
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AABCharacterBase(AABCharacterBase&&); \
@@ -35,12 +36,12 @@ public: \
 	NO_API virtual ~AABCharacterBase();
 
 
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_16_PROLOG
-#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_19_GENERATED_BODY \
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_17_PROLOG
+#define FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_19_INCLASS_NO_PURE_DECLS \
-	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_19_ENHANCED_CONSTRUCTORS \
+	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_20_INCLASS_NO_PURE_DECLS \
+	FID_PracticeUnreal_ArenaBattle_Source_ArenaBattle_Character_ABCharacterBase_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
